@@ -1,0 +1,8 @@
+{
+  "name": "Shanvi Sri Boutique Mancherial | Designer Blouse & Maggam Work",
+  "description": "Shanvi Sri Boutique in Mancherial offers designer blouse designs, Maggam work, computer embroidery and customized boutique work. Explore our designs and contact us for custom enquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #120306;
+    color: #F9F6F0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a0409;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a121c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6a1a28;
+}
+
+/* Shimmer animation for gold accents */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.2) 0%, rgba(243, 229, 171, 0.6) 50%, rgba(212, 175, 55, 0.2) 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 4s infinite linear;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F9F6F0 15%, #F3E5AB 50%, #D4AF37 85%, #B38F24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, rgba(212, 175, 55, 0.4), rgba(243, 229, 171, 0.8), rgba(212, 175, 55, 0.4)) 1;
+}
+
+/* Maggam & Zari subtle pattern background */
+.bg-maggam-pattern {
+  background-color: #170408;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
