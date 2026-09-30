@@ -28,10 +28,10 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v6
-        with:
-          node-version: lts/*
-          cache: npm
-
+        
+with:
+  node-version: lts/*
+  package-manager-cache: false
       - name: Install dependencies
         run: npm install
 
